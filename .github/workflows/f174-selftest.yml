@@ -41,11 +41,13 @@ jobs:
           assert p["target_repo_initialized"] is True
           assert p["training_status"]=="NOT_TRAINED"
           assert p["visual_simulation_executed"] is True
-          assert p["video_render_executed"] is False
+          assert p["video_render_executed"] is True
           assert p["physical_model_claimed"] is False
+          assert p["production_video_claimed"] is False
           assert p["physical_validation_claimed"] is False
           assert p["physical_test_status"]=="NOT_TESTED"
           assert p["visual_canary"]["run_id"]==36160498658
+          assert p["video_canary"]["run_id"]==36161254578
           assert p["paid_provider_auto_activation"] is False
           print("F174_EVIDENCE_BOUNDARIES=PASS")
           PY
