@@ -19,5 +19,9 @@
     "GENERATED_VISUAL_NE_PHYSICAL_VALIDATION",
     "REAL_EXECUTION_RECEIPT_REQUIRED"
   ],
-  "repository_initialized_at": "2026-09-25"
+  "repository_initialized_at": "2026-09-25",
+  "bootstrap_source": "dmaillot95-ui/cerebron-omega-ai:scaffolds/f174-elyra-visual-simulation",
+  "initial_commit": "e270fa591e6f16afee3d9ae7a3f1d458539ec085",
+  "bootstrap_manifest_source": "dmaillot95-ui/cerebron-omega-ai:config/farm-bootstrap-manifest-f162-f174.json",
+  "selftest_status": "PENDING"
 }
