@@ -1,0 +1,48 @@
+{
+  "schema": "CEREBRON_RECURSIVE_IMPROVEMENT_CONTRACT_V1",
+  "date": "2026-09-25",
+  "farm_id": 174,
+  "identity": "ELYRA VISUAL SIMULATION",
+  "mode": "MEASURED_ITERATIVE_IMPROVEMENT_NOT_UNCONTROLLED_SELF_MODIFICATION",
+  "baseline_head": "f5f6cd3bbad925bbf6db90772fb0045250f237b4",
+  "scope": "visual-state simulation, deterministic rendering, MP4 generation, replayability, provenance and later qualified visual/avatar pipelines",
+  "loop": [
+    "FETCH_REAL_HEAD",
+    "READ_HANDOFF_AND_CURRENT_EVIDENCE",
+    "FREEZE_BASELINE",
+    "FORM_ONE_TESTABLE_HYPOTHESIS",
+    "MAKE_MINIMAL_CHANGE",
+    "RUN_EXECUTABLE_VISUAL_OR_VIDEO_CANARY",
+    "COMPARE_TO_FROZEN_BASELINE",
+    "RUN_ABLATION_WHEN_APPLICABLE",
+    "CHECK_DETERMINISM_AND_ARTIFACT_HASHES",
+    "CHECK_QUALITY_LATENCY_SIZE_AND_REGRESSIONS",
+    "KEEP_OR_ROLLBACK",
+    "WRITE_RECEIPT_WITH_SHA_AND_LIMITS",
+    "REPEAT"
+  ],
+  "metrics": [
+    "deterministic_replay",
+    "frame_integrity",
+    "video_decode_success",
+    "render_latency",
+    "artifact_size",
+    "visual_consistency",
+    "provenance_completeness",
+    "regression_count"
+  ],
+  "invariants": [
+    "REALITY>COHERENCE",
+    "EVIDENCE>CONFIDENCE",
+    "CLAIM<=EVIDENCE",
+    "VERIFY_BEFORE_COMMIT",
+    "SIMULATION!=TEST",
+    "GENERATED_VISUAL!=PHYSICAL_VALIDATION",
+    "MEMORY!=TRAINING",
+    "NO_FORCE_PUSH",
+    "NO_DELETING_PRIOR_EVIDENCE",
+    "NO_PRODUCTION_VIDEO_CLAIM_FROM_CANARY",
+    "NO_PAID_PROVIDER_AUTO_ACTIVATION",
+    "ROLLBACK_PATH_REQUIRED"
+  ]
+}
