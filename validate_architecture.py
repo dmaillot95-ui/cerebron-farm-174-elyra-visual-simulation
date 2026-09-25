@@ -7,8 +7,8 @@ p=json.loads((R/"config/project.json").read_text())
 assert a["farm_id"]==174
 assert a["identity"]=="ELYRA"
 assert p["target_repo_exists"] is True
-assert p["target_repo_initialized"] is False
+assert p["target_repo_initialized"] is True
 assert p["training_status"]=="NOT_TRAINED"
 assert p["visual_simulation_executed"] is False
 assert p["physical_test_status"]=="NOT_TESTED"
-print("PASS F174 ELYRA visual simulation prepared scaffold")
+print("PASS F174 ELYRA dedicated repository initialized; simulation not executed")
